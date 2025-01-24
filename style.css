@@ -2,15 +2,33 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 
-body{
+.container-fluid{
   background: url(img/nigga.jpg);
   background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
 @media (max-width: 768px) {
   .top-bar {
     display: none !important;
+  }
+  .hero{
+    font-size: 20px !important;
+   padding-top: 25px !important; 
+   margin-top: 10px !important;
+  }
+  .col-md-4 {
+    padding-bottom: 20px !important;
+    margin-bottom: 10px !important;
+  }
+  .col-md-4:last-child {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .btn-warning{
+    width: 50% !important;
+    border-radius: 0px;
   }
 }
 /* font */
@@ -23,7 +41,6 @@ body{
 .contact-info{
   font-weight: 200;
 }
-
 /* Top Bar */
 .top-bar {
     display: flex;
@@ -119,12 +136,11 @@ body{
     color: #fff;
   }
   
-  .hero h5 {
-    font-family: 'Montserrat', sans-serif;
+  .hero .judul {
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 2.5rem;
     color: #ffc107;
-    margin-bottom: 1rem;
   }
   
   .hero p {
@@ -135,4 +151,121 @@ body{
   .hero .btn {
     padding: 10px 20px;
   }
+
+  /* body */
+
+  .services h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+  }
   
+  .services h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .services p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .services ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .services ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .services ul li i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .card {
+    border-radius: 0px;
+    border: none;
+    height: 500px;
+    
+  }
+  
+  .card h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
+  .card .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .card .btn-warning {
+    background-color: #FFB400;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .card .btn-warning:hover {
+    background-color: #e0a800;
+  }
+  .list-unstyled li{
+    color: #184341;
+  }
+  
+  /* 3 cards */
+  .service-card {
+    /* border-radius: 10px; */
+    /* border: none; */
+    /* padding: 20px; Reduce padding if needed */
+    height: 100%; /* Makes sure the card stretches evenly */
+    display: flex;
+    flex-direction: column; /* Ensures proper alignment of children */
+    justify-content: space-between; /* Spaces out content evenly */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-card .card-icon {
+    font-size: 2.5rem;
+    color: #FFB400;
+  }
+  
+  .service-card .card-title {
+    color: #184341;
+  }
+  
+  .service-card .card-text {
+    font-size: 0.9rem;
+  }
+
+/* we offer popular plans for */
+.popular-plans {
+  background: linear-gradient(90deg, #184341 100%, #fff 0%); 
+  overflow: visible; /* Allows elements to go beyond the section boundaries */
+}
+
+/* typingeffect */
+#typing-effect {
+  
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
